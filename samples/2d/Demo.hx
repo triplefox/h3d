@@ -14,7 +14,7 @@ class Demo {
 	function init() {
 		scene = new h2d.Scene();
 		
-		var font = new h2d.Font("Arial", 16);
+		var font = h2d.Font.fromEmbedded("Arial", 16);
 		var tf = new h2d.Text(font, scene);
 		tf.textColor = 0xFFFFFF;
 		tf.dropShadow = { dx : 2, dy : 2, color : 0xFF0000, alpha : 0.5 };
